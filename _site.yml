@@ -2,11 +2,6 @@ name: "Andrew J. Basinski"
 output_dir: "."
 navbar:
   title: "Andrew J. Basinski"
-  left:
-    - text: "Projects"
-      href: research.html
-    - text: "Teaching"
-      href: teaching.html
   right:
     - icon: fa-envelope fa-lg
       href: contact.html

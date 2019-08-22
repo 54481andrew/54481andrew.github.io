@@ -5,9 +5,24 @@
 
 <img src="images/andrew.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
-My work is centered on building forecasting models of animal-borne infectious disease. As a postdoc in [Scott Nuismer's lab] (https://www.leeef.org/team),I've developed a forecasting model of Lassa fever.  
+My background is in mathematical biology. Currently, I work on
+mathematical models and machine learning to forecast the risk of animal-borne 
+infectious diseases. Before that, I worked on models of animal
+vaccination, with an emphasis on understanding the
+benefits of transmissible vaccines. 
 
-I graduated from the [University of Utah] (www.math.utah.edu) with a PhD in mathematics in 2016. 
+CV is [here](files/Zabor_CV_2017_Q4.pdf)
 
+***
 
-My full CV is available [here](files/Zabor_CV_2017_Q4.pdf).
+<br> <br> <br> <br> <br>
+
+\vspace{25in}
+
+##Lassa Risk Map   
+
+<center>
+[![](images/movie_forecast.gif){width=4in}](www.google.com)
+</center>
+
+[//]: # 
