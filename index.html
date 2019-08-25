@@ -305,16 +305,26 @@ $(document).ready(function () {
 
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
 <p><img src="images/andrew.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left"></p>
-<p>My background is in mathematical biology. Currently, I work on mathematical models and machine learning to forecast the risk of animal-borne infectious diseases. Before that, I worked on models of animal vaccination, with an emphasis on understanding the benefits of transmissible vaccines.</p>
+<p>My background is in mathematical biology. This background has grown into experience using dynamical system models that solve applied problems in epidemiology, an appreciation for the beauty in mathematics, and a growing interest in machine learning. Currently, I use machine learning to forecast the risk of animal-borne infectious diseases. Before that, I worked on models of animal vaccination, with an emphasis on understanding the benefits of transmissible vaccines. See below for more details on these projects.</p>
 <p>Click <a href="files/CV/Basinski_CV.pdf">here</a> for a recent CV.</p>
 <hr />
 <p><br> <br> <br> <br> <br></p>
 
 <div id="lassa-risk-map" class="section level2">
 <h2>Lassa Risk Map</h2>
+<p>Lassa Fever results in roughly 500000 deaths per year in West Africa, and is caused by an RNA arenavirus with high mutational potential. As a part of the DARPA funded project PREEMPT (PREventing EMerging Pathogenic Threats), I designed machine learning framework capable of generating predictions of when and where the risk of Lassa Fever is greatest. The GIF below shows model predictions for recent (as of this writing) months in West Africa. As you can see, the risk of Lassa transmission is predicted to be greatest in December and January, and varies quite a bit spatially. This is an important information that will help guide Lassa intervention strategies to regions in which the risk is greatest.</p>
 <center>
-<a href="www.google.com"><img src="images/movie_forecast.gif" width="384" /></a>
+<img src="images/movie_forecast.gif" width="384" />
 </center>
+<p>The forecasting model consists of different candidate submodels (layers) that each forecast a different aspect of the risk of Lassa Fever. The final forecasting model consists of a set of submodels that best predict human Lassa count cases. The first layer uses boosted regression trees that, when parameterized with land cover and weather attributes of known locations of Lassa occurence, predict the probability of Lassa being present at any 5 km by 5 km square. Similarly, the second model uses boosted regression trees to forecast the probability that the rodent reservoir of Lassa, the multimammate rat , occurs in an area. Finally, the third layer uses rodent trapping data to predict seasonal migrations of rats into and out of domestic settings. The form of the forecast is</p>
+<p><span class="math display">\[ \text{Lassa transmission risk} \sim D_L(x) D_R(x) T(t,x)\]</span>,</p>
+<p>where <span class="math inline">\(D_L(x)\)</span> is the probability of Lassa occuring at spatial position x, <span class="math inline">\(D_R(x)\)</span> gives the probability that the primary rodent reservoir occurs, and <span class="math inline">\(T(t,x)\)</span> describes the seasonal migration of the reservoir.</p>
+<p><br> <br></p>
+</div>
+<div id="when-should-you-vaccinate-a-fluctuating-population" class="section level2">
+<h2>When should you vaccinate a fluctuating population?</h2>
+<p><br> <br></p>
+<p>Wildlife vaccination has proven itself an effective means of controlling diseases that can otherwise spread to humans and domestic pets (e.g. rabies). Given the success of vaccination campaigns in fox and raccoon populations, it is likely that vaccination will be increasingly used on other wildlife as well (e.g. Ebola in gorillas and/or bats, Lassa in rats). From past campaigns on raccoons and fox, we know that vaccinating in the spring generally results in greater vaccine uptake, simply because the most recent juvenile population is developed and foraging at that time. My work with an undergraduate at the University of Idaho uses a mathematical model to predict the importance of timing in other animal reservoirs that are being considered for vaccination. Github code will be posted soon.</p>
 </div>
 
 

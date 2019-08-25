@@ -5,11 +5,17 @@
 
 <img src="images/andrew.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
-My background is in mathematical biology. Currently, I work on
-mathematical models and machine learning to forecast the risk of animal-borne 
+
+
+My background is in mathematical biology. This background has grown
+into experience using dynamical system models that solve applied problems in epidemiology,
+an appreciation for the beauty in mathematics,
+and a growing interest in machine learning. 
+Currently, I use machine learning to forecast the risk of animal-borne 
 infectious diseases. Before that, I worked on models of animal
 vaccination, with an emphasis on understanding the
-benefits of transmissible vaccines. 
+benefits of transmissible vaccines. See below for more details on these
+projects. 
 
 Click [here](files/CV/Basinski_CV.pdf) for a recent CV. 
 
@@ -21,8 +27,27 @@ Click [here](files/CV/Basinski_CV.pdf) for a recent CV.
 
 ##Lassa Risk Map   
 
+Lassa Fever results in roughly 500000 deaths per year in West Africa, and is caused by an 
+RNA arenavirus with high mutational potential. As a part of the DARPA funded project PREEMPT (PREventing EMerging Pathogenic Threats),  I designed machine learning framework capable forecasting when and where the risk of Lassa Fever is greatest. The GIF below shows model predictions for recent (as of this writing) months in West Africa. As you can see, the risk of Lassa transmission is predicted to be greatest in December and January, and varies spatially as well. This is important information that will help guide Lassa intervention strategies and subsequent research to regions where the need is greatest. 
+
 <center>
-[![](images/movie_forecast.gif){width=4in}](www.google.com)
+![](images/movie_forecast.gif){width=4in}
 </center>
+
+The forecasting model consists of different candidate submodels (layers) that each forecast a different aspect of the risk of Lassa Fever. The final forecasting model consists of a set of submodels that best predict the number of human Lassa cases in Nigeria. The first layer uses boosted regression trees that, when given land cover and weather attributes of known locations of Lassa occurence, predict the probability of Lassa being present at any 5 km by 5 km pixel across West Africa. Similarly, the second layer uses boosted regression trees to forecast the probability that the rodent reservoir of Lassa, the multimammate rat \emph{Mastomys natalensis}, occurs in a pixel. Finally, the third layer uses rodent trapping data to predict seasonal migrations of rats into and out of domestic settings.  The form of the forecast is
+
+\[ \text{Lassa transmission risk} \sim D_L(x) D_R(x) T(t,x)\],
+
+where $D_L(x)$ is the probability of Lassa occuring at spatial position x, $D_R(x)$ gives the probability that the primary rodent reservoir occurs, and $T(t,x)$ describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate $x$ occurs through weather and land cover predictors from satellite datasets. 
+
+<br> <br>
+
+##When should you vaccinate a fluctuating population? 
+
+<br> <br>
+
+Wildlife vaccination has proven itself an effective means of controlling diseases that can otherwise spread to humans and domestic pets (e.g. Ebola, rabies). Given the success of vaccination campaigns in fox and raccoon populations, it is likely that vaccination will be used on other wildlife as well (e.g. Ebola in gorillas and/or bats, Lassa in rats). From past campaigns on raccoons and fox, we know that vaccinating in the spring generally results in greater vaccine uptake, simply because the most recent juvenile population is developed and foraging at that time. My work with an undergraduate at the University of Idaho uses a mathematical model to predict when the timing of vaccine delivery is important for several reservoirs being considered for vaccination. 
+
+
 
 [//]: # 
