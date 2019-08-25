@@ -1,0 +1,209 @@
+\documentclass[11pt]{article}
+
+%\usepackage{palatino}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\cellone}{2.5cm}
+\newcommand{\celltwo}{12cm}
+\newcommand{\cellthree}{4cm}
+
+\newcommand{\incellone}{3cm}
+\newcommand{\incelltwo}{5cm}
+\newcommand{\incellthree}{10cm}
+\newcommand{\latex}{\LaTeX}
+\newcommand{\spa}{\vspace{.4in}}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=10mm,
+ right=10mm,
+ top=15mm,
+ bottom=20mm,
+ }
+
+
+\begin{document}
+
+
+{\huge Andrew J. Basinski \hspace{2.5in} October, 2018}
+
+\noindent\makebox[\linewidth]{\rule{\linewidth}{0.4pt}}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\incellone} p{\incelltwo} p{\incellthree}}
+
+  C\textsc{ontact} & \parbox[t]{5 cm}{Andrew Basinski \\ 232 N Lilly st \\ Moscow, ID 83843} & \parbox[t]{8cm}{Phone: 715-252-7270\\
+    Email: abasinski@uidaho.edu} \\ 
+
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+E\textsc{ducation} & \parbox[t]{13cm}{{\bf Ph.D., Mathematics} University of Utah \\  \emph{Adviser: Fred Adler} \\ \emph{Thesis Title: Information-Use Strategies in Ants}} &  August, 2016 \\[.5in]   
+
+		          & \parbox[t][0cm]{13cm}{{\bf B.S., Biology} University of Wisconsin-Stevens Point} & Spring, 2009 \\
+		          & \parbox[t]{13cm}{{\bf B.S., Mathematics} University of Wisconsin-Stevens Point} & Spring, 2009 \\
+\end{tabularx}
+
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo}}
+  \parbox[t][0cm]{\cellone}{R\textsc{esearch} E\textsc{xperience}} &  \parbox[t][0cm]{12cm}{
+    Epidemiological models, spatial ecology, ODE and PDE numerical simulation and analysis, stochastic models, agent-based simulation}
+\end{tabularx}
+
+\spa
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo}}
+  \parbox[t][0cm]{\cellone}{P\textsc{ublications}} &  \parbox[t][0cm]{12cm}{ 
+    \begin{itemize}
+
+    \item {\bf Basinski AJ}, Nuismer SL, Remien CH. A little goes a long way: Weak vaccine transmission facilitates oral vaccination campaigns against zoonotic pathogens. PLoS neglected tropical diseases 13.3 (2019)
+
+      \vspace{0.05in}
+      
+    \item Nuismer SL, May RH, {\bf Basinski AJ}, Remien CH. Controlling epidemics with transmissible vaccines. PloS One 13.5 (2018).
+
+      \vspace{0.05in}
+      
+    \item {\bf Basinski AJ} et al. Evaluating the promise of recombinant transmissible vaccines. Vaccine (2017).
+      
+    \end{itemize}
+  }
+\end{tabularx}
+
+\spa
+\spa
+\spa
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo}}
+  \parbox[t][0cm]{\cellone}{P\textsc{ublications} In P\textsc{rogress}} &  \parbox[t][0cm]{12cm}{ 
+    \begin{itemize}
+    
+    \item {\bf Basinski AJ}, Nuismer SL, Remien CH. (2018) A little goes a long way: weak vaccine transmission facilitates oral vaccination campaigns against zoonotic pathogens. Manuscript submitted for publication. 
+
+      \vspace{0.05in}
+      
+    \item Varrelman TJ, {\bf Basinski AJ}, Remien CH, Nuismer SL. (2018) Transmissible vaccines in heterogeneous populations: Implications for vaccine design. Manuscript submitted for publication. 
+      
+      \vspace{0.05in}
+      
+    \item Schreiner CL, {\bf Basinski AJ}, Nuismer SL, Remien CH. When to vaccinate a fluctuating wildlife population: is timing everything? Manuscript in preparation. 
+      
+    \end{itemize}
+  }
+\end{tabularx}
+
+\spa
+\spa
+\spa
+\spa
+\spa
+\spa
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+  \parbox[t][0cm]{\cellone}{C\textsc{onferences}}\\ \\
+
+  \parbox[t][0cm]{\cellone}{}  & \parbox[t][]{\celltwo}{{\bf MIDAS Meeting}, Washington DC, US} & \parbox[t][]{\cellthree}{April, 2018} \\ 
+  & \hspace{.2in} \parbox[t][]{\celltwo}{ \emph{Talk: } The benefits and challenges of using transmissible \\
+  vaccines in zoonotic vaccination campaigns} \\
+
+  & \vspace{0.1in} \parbox[t][]{\celltwo}{{\bf Society for Mathematical Biology}, SLC, UT, US} & \vspace{0.1in} \parbox[t][]{\cellthree}{July, 2017} \\ 
+  & \hspace{.2in} \parbox[t][]{\celltwo}{ \emph{Poster: } Evaluating the Promise of Recombinant \\ Transmissible Vaccines} \\
+
+  
+  & \vspace{0.1in} \parbox[t][]{\celltwo}{{\bf Science Day}, SLC, UT, US} & \vspace{0.1in} \parbox[t][]{\cellthree}{Nov., 2013/2014} \\ 
+  & \hspace{.2in} \parbox[t][]{\celltwo}{ \emph{Talk: } Can Ants Do Calculus?}\\
+  
+  
+  & \vspace{0.1in} \parbox[t][]{\celltwo}{{\bf Society for Mathematical Biology}, Tempe, AZ, US} & \vspace{0.1in} \parbox[t][]{\cellthree}{June, 2014} \\ 
+  & \hspace{.2in} \parbox[t][]{\celltwo}{ \emph{Talk: } The effects of colony structure on resource \\ collection ability} \\
+  
+											 
+  & \vspace{0.1in} \parbox[t][0cm]{\celltwo}{{\bf Univ. Utah Biology Retreat}, SLC, UT, US } & \vspace{0.1in} \parbox[t][]{\cellthree}{Oct., 2013} \\
+  & \hspace{.2in} \parbox[t][]{\celltwo}{\emph{Poster:} The Consequences of Owning Multiple Homes: \\ Polydomy in Ants}
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+\parbox[t][0cm]{\cellone}{S\textsc{cientific} C\textsc{omputing}} & \parbox[t][0cm]{6cm}{R, Mathematica, Python, C++, \latex, Linux systems, Matlab} 
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+
+\parbox[t][0cm]{\cellone}{T\textsc{eaching} E\textsc{xperience}} &  \parbox[t][0cm]{\celltwo}{{\bf  Math In Medicine} (Math 4600)}  &  Spring, 2015 \\ 
+					          &  \parbox[t][0cm]{\celltwo}{{\bf  Calculus III} (Math 2210)} &  Fall, 2014 \\
+					          &  \parbox[t]{\celltwo}{{\bf Glendale Middle School} Advanced Science}   &  \parbox[t]{\cellthree}{Fall, 2011 - Spr., 2012} \\				
+					          &  \parbox[t]{\celltwo}{{\bf Calculus I} (Math 1210)}   &  \parbox[t]{\cellthree}{Fall, 2010} \\					          
+					          &  \parbox[t]{\celltwo}{{\bf  Business Calculus} (Math 1210)}   &  \parbox[t]{\cellthree}{Spr., 2011, Spr., 2010 \\ Fall, 2009 } \\
+
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+  
+  \parbox[t][0cm]{\cellone}{T\textsc{eaching} A\textsc{ssistant} E\textsc{xperience}} & \parbox[t][0cm]{\celltwo}{{\bf  Calculus II} (Math 1320)}  &  \parbox[t][]{\cellthree}{Spring, 2016}\\ 
+  
+  
+  & \parbox[t][0cm]{\celltwo}{{\bf  PDE's for Engineers} (Math 3140)}  &  \parbox[t][]{\cellthree}{Fall, 2015}\\ 
+  
+  &  \parbox[t][0cm]{\celltwo}{{\bf  Math in Medicine} (Math 4600)}  &  \parbox[t][]{\cellthree}{Spr., 2013, Spr., 2014}\\  
+  &  \parbox[t][0cm]{\celltwo}{{\bf  Math Models In Biol} (Biol 5910)}  &  \parbox[t][]{\cellthree}{Fall, 2013} \\ 					          
+  &  \parbox[t][1cm]{\celltwo}{{\bf  Math Biology I} (Math 5110)}  &  Fall, 2012 \\ 
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+  \parbox[t][0cm]{\cellone}{S\textsc{tudent} R\textsc{easearch}} & \parbox[t][]{\celltwo}{Courtney Schreiner (wildlife vaccination)} & \parbox[t][0cm]{\cellthree}{2018-} 
+
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+\parbox[t][0cm]{\cellone}{A\textsc{wards}, H\textsc{onors}, F\textsc{ellowships}} & \parbox[t][0cm]{\celltwo}{{\bf Graduate Teaching Fellowship}, Mathematics} & \parbox[t][]{\cellthree}{Fall, 2009 - Spr., 2011 \\ Fall, 2014 - 2016} \\ 
+												        & \parbox[t][0cm]{\celltwo}{{\bf RTG Teaching Fellowship} in Math. Biology} & \parbox[t][]{\cellthree}{Fall, 2012 - Spr., 2014} \\
+												        &  \parbox[t][0cm]{\celltwo}{{\bf SCIF Grant}}  &  Summer, 2012 \\ 	
+												        &  \parbox[t][0cm]{\celltwo}{{\bf WEST Fellowship}}  &  Fall, 2011 - Spr., 2012 \\ 
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+\parbox[t][]{\cellone}{A\textsc{cademic} S\textsc{ervice}} & \parbox[t][0cm]{\celltwo}{{\bf Journal Reviews} for Oecologia, PLOS ONE, Journal of Theoretical Biology.  F1000 member. } & \parbox[t][]{\cellthree}{2013 - 2016} \\ \\
+                                                                                                      & \parbox[t][0cm]{\celltwo}{Designed and ran Society of Math Biology booth at {\bf USA Science and Engineering Festival} in Washington D.C.} & \parbox[t][]{\cellthree}{April, 2014} \\ 
+
+\end{tabularx}
+
+\spa
+
+\begin{tabularx}{\textwidth}{p{\cellone} p{\celltwo} p{\cellthree}}
+  \parbox[t][0cm]{\cellone}{R\textsc{eferences}} & \parbox[t][0cm]{6cm}{
+    
+    \begin{itemize}
+      
+    \item \parbox[t]{10cm}{Scott Nuismer (snuismer@uidaho.edu)  \\ Office: (208) 885-4096   \\ Mathematics, University of Idaho}
+      
+    \item \parbox[t]{10cm}{Chris Remien (cremien@uidaho.edu) \\ Office: (208) 885-5901 \\ Biology, University of Idaho}
+      
+    \item \parbox[t]{10cm}{Fred Adler (adler@math.utah.edu) \\ Math office: (801) 581-6848 \\ Biology office: (801) 585-6202 \\ Biology and Mathematics, University of Utah}
+      
+    \end{itemize}
+  }
+  
+\end{tabularx}
+
+\end{document}
