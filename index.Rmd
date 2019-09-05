@@ -28,7 +28,7 @@ Click [here](files/CV/Basinski_CV.pdf) for a recent CV.
 ##Lassa Risk Map   
 
 Lassa Fever results in roughly 500000 deaths per year in West Africa, and is caused by an 
-RNA arenavirus with high mutational potential. As a part of the DARPA funded project PREEMPT (PREventing EMerging Pathogenic Threats),  I designed machine learning framework capable forecasting when and where the risk of Lassa Fever is greatest. The GIF below shows model predictions for recent (as of this writing) months in West Africa. As you can see, the risk of Lassa transmission is predicted to be greatest in December and January, and varies spatially as well. This is important information that will help guide Lassa intervention strategies and subsequent research to regions where the need is greatest. 
+RNA arenavirus with high mutational potential. As a part of the DARPA funded project PREEMPT (PREventing EMerging Pathogenic Threats),  I designed a machine learning framework that is capable of forecasting when and where the risk of Lassa Fever is greatest. The GIF below shows model predictions for recent (as of this writing) months in West Africa. As you can see, the risk of Lassa transmission is predicted to be greatest in December and January, and varies spatially as well. This is important information that will help guide Lassa intervention strategies and subsequent research to regions where the need is greatest. 
 
 <center>
 ![](images/movie_forecast.gif){width=4in}
@@ -46,7 +46,7 @@ where $D_L(x)$ is the probability of Lassa occuring at spatial position x, $D_R(
 
 <br> <br>
 
-Wildlife vaccination has proven itself an effective means of controlling diseases that can otherwise spread to humans and domestic pets (e.g. Ebola, rabies). Given the success of vaccination campaigns in fox and raccoon populations, it is likely that vaccination will be used on other wildlife as well (e.g. Ebola in gorillas and/or bats, Lassa in rats). From past campaigns on raccoons and fox, we know that vaccinating in the spring generally results in greater vaccine uptake, simply because the most recent juvenile population is developed and foraging at that time. My work with an undergraduate at the University of Idaho uses a mathematical model to predict when the timing of vaccine delivery is important for several reservoirs being considered for vaccination. 
+Wildlife vaccination has proven itself an effective means of controlling diseases that can otherwise spread to humans and domestic pets (e.g. Ebola, rabies). Given the success of vaccination campaigns in fox and raccoon populations, it is likely that vaccination will be used on other wildlife as well (e.g. Ebola in gorillas and/or bats, Lassa in rats). From past campaigns on raccoons and fox, we know that vaccinating in the fall generally results in greater vaccine uptake, simply because the most recent juvenile population is developed and foraging at that time. My work with an undergraduate at the University of Idaho uses a mathematical model to predict when the timing of vaccine delivery is important for several reservoirs being considered for vaccination. 
 
 
 
