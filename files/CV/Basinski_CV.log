@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.5.26)  22 FEB 2020 21:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.5.26)  6 MAR 2020 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -301,12 +301,12 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 60--61
  []
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd)
-Underfull \hbox (badness 10000) in alignment at lines 97--97
+Underfull \hbox (badness 10000) in alignment at lines 101--101
 [][] 
  []
 
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 97--98
+Overfull \hbox (17.0pt too wide) in paragraph at lines 101--102
 [][] 
  []
 
@@ -520,7 +520,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
 Here is how much of TeX's memory you used:
  4785 strings out of 492615
  71317 string characters out of 6131390
- 178610 words of memory out of 5000000
+ 177610 words of memory out of 5000000
  8705 multiletter control sequences out of 15000+600000
  7801 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -533,7 +533,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmtt10.pfb>
-Output written on Basinski_CV.pdf (3 pages, 109345 bytes).
+Output written on Basinski_CV.pdf (3 pages, 109181 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
