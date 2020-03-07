@@ -38,7 +38,7 @@ The forecasting model consists of different candidate submodels (layers) that ea
 
 \[ \text{Lassa transmission risk} \sim D_L(x) D_R(x) T(t,x)\],
 
-where $D_L(x)$ is the probability of Lassa occuring at spatial position x, $D_R(x)$ gives the probability that the primary rodent reservoir occurs, and $T(t,x)$ describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate $x$ occurs through weather and land cover predictors from satellite datasets. This work is submitted to the Proceedings of the Royal Society B, and available as a [BioRxiv preprint](https://www.biorxiv.org/content/10.1101/2020.03.05.979658v1). Code that is discussed in the manuscript is available in [this github repository](https://github.com/54481andrew/Vaccinate-a-fluctuating-population).
+where $D_L(x)$ is the probability of Lassa occuring at spatial position x, $D_R(x)$ gives the probability that the primary rodent reservoir occurs, and $T(t,x)$ describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate $x$ occurs through weather and land cover predictors from satellite datasets. This work is submitted to the Proceedings of the Royal Society B, and available as a [BioRxiv preprint](https://www.biorxiv.org/content/10.1101/2020.03.05.979658v1). Code that is discussed in the manuscript is available in [this github repository](https://github.com/54481andrew/pathogen-spillover-forecast).
 
 <br> <br>
 
