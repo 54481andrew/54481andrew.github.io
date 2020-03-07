@@ -6,7 +6,7 @@
 <img src="images/Me.jpeg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
 
-
+## About me
 My background is in mathematical biology. This background has grown
 into experience using dynamical system models that solve applied problems in epidemiology,
 an appreciation for the beauty in mathematics,
@@ -24,13 +24,11 @@ Click [here](files/CV/Basinski_CV.pdf) for a recent CV.
 
 \vspace{25in}
 
-##Lassa Risk Map   
+## Using machine learning to predict pathogenic threats
 
-Approximately 40% of new human diseases stem from viruses or bacteria that circulate in wildlife populations. Examples are HIV from chimpanzees, Influenza A from birds, and SARS from bats. In addition, many emerging human diseases originate in low and middle income regions of the world with limited health infrastructure. Consequently, humanity is largely unaware of new emergent infectious diseases until after many humans are impacted (i.e., after a pandemic). In this work, we develop a machine learning framework that is capable of using limited disease data to predict the relative disease risk of a wildlife reservoir to humans.  
+The 2020 Covid-19 pandemic is a salient reminder that approximately 40% of new human diseases stem from viruses or bacteria that circulate in wildlife populations. Covid-19 is believed to be transmitted by bats. Other examples are HIV from chimpanzees and Influenza A from birds. Many emerging human diseases originate in low and middle income regions of the world with limited health system infrastructure. Consequently, humanity is largely unaware of new emergent infectious diseases until after many humans are impacted (i.e., after a pandemic). 
 
-We applied our framework to Lassa virus, an RNA arenavirus that primarily circulates in rodent populations of West Africa and causes Lassa Fever when transmitted to humans. Rough estimates indicate that the Lassa virus infects as many as 500000 individuals per year. Though many cases of Lassa Fever are asymptomatic, about 5000 individuals die each year from the disease. Even more worrisome, chance mutations could allow the Lassa virus to better circulate in humans or increase the deadliness of the virus.  
-
-The GIF below shows model predictions for recent (as of this writing) months in West Africa. As you can see, the risk of Lassa transmission is predicted to be greatest in December and January, and varies spatially as well. This is important information that will help guide Lassa intervention strategies and subsequent research to regions where the need is greatest.
+As part of the DARPA-funded PREEMPT (PREventing the EMergence of Pathogenic Threats) project, I worked with a team of researchers at the University of Idaho to build a machine learning framework that predicts the risk of pathogen transmission from a wildlife reservoir into human populations. We applied our framework to Lassa virus, an RNA arenavirus that primarily circulates in rodent populations of West Africa and causes Lassa Fever when transmitted to humans. Rough estimates indicate that the Lassa virus infects around 100,000 - 300,000 per year, and as many as 13 million individuals per year. The true number is difficult to estimate because, while 2\% of cases are fatal, upwards of 80\% of all cases are asymptomatic. However, the high mutational ability of RNA viruses like Lassa allows the possibility of new, more dangerous strains emerging in human populations. The GIF below shows our model's predictions of Lassa transmission to humans in West Africa. 
 
 <center>
 ![](images/movie_forecast.gif){width=4in}
@@ -40,14 +38,14 @@ The forecasting model consists of different candidate submodels (layers) that ea
 
 \[ \text{Lassa transmission risk} \sim D_L(x) D_R(x) T(t,x)\],
 
-where $D_L(x)$ is the probability of Lassa occuring at spatial position x, $D_R(x)$ gives the probability that the primary rodent reservoir occurs, and $T(t,x)$ describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate $x$ occurs through weather and land cover predictors from satellite datasets. This work is in the process of being published. 
+where $D_L(x)$ is the probability of Lassa occuring at spatial position x, $D_R(x)$ gives the probability that the primary rodent reservoir occurs, and $T(t,x)$ describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate $x$ occurs through weather and land cover predictors from satellite datasets. This work is submitted to the Proceedings of the Royal Society B, and available as a [BioRxiv preprint](https://www.biorxiv.org/content/10.1101/2020.03.05.979658v1). Code that is discussed in the manuscript is available in [this github repository](https://github.com/54481andrew/Vaccinate-a-fluctuating-population).
 
 <br> <br>
 
-##When should you vaccinate a fluctuating population? 
+## When should you vaccinate a fluctuating population? 
 
 <br> <br>
 
-Wildlife vaccination has proven itself an effective means of controlling diseases that can otherwise spread to humans and domestic pets (e.g. rabies in fox, coyotes, and raccoons). Given the success of vaccination campaigns in fox and raccoon populations, it is likely that vaccination will be used on other wildlife as well (e.g., Ebola in gorillas and/or bats, Lassa in rodents). From past campaigns on raccoons and fox, we know that vaccinating in the fall generally results in greater vaccine uptake, simply because the most recent juvenile population is developed and foraging at that time. My work with an undergraduate at the University of Idaho used a mathematical model to explore how timing of vaccination can influence the outcome of a disease management program in wildlife. Our work was published in the Journal of Applied Ecology (Schreiner, Basinski, 2020), and the associated code is available in <a href = "https://github.com/54481andrew/Vaccinate-a-fluctuating-population"> this github repository
+Wildlife vaccination has proven itself an effective means of controlling diseases that can otherwise spread to humans and domestic pets (e.g. rabies in fox, coyotes, and raccoons). Given the success of vaccination campaigns in fox and raccoon populations, it is likely that vaccination will be used on other wildlife as well (e.g., Ebola in gorillas and/or bats, Lassa in rodents). From past campaigns on raccoons and fox, we know that vaccinating in the fall generally results in greater vaccine uptake, simply because the most recent juvenile population is developed and foraging at that time. My work with an undergraduate at the University of Idaho used a mathematical model to explore how timing of vaccination can influence the outcome of a disease management program in wildlife. Our work was published in the Journal of Applied Ecology (Schreiner, Basinski, 2020), and the associated code is available in [this github repository](https://github.com/54481andrew/Vaccinate-a-fluctuating-population).
 
 
