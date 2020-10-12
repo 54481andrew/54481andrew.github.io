@@ -26,9 +26,11 @@ Click [here](files/CV/Basinski_CV.pdf) for a recent CV.
 
 ## Using machine vision to assess the risk of zoonotic diseases
 
-<br> <br>
+<br>
 
-<img src="images/CNN_Building_Segmentation.jpg" style="width:75%; border:10px solid; margin-right: 20px" align="top">
+<img src="images/CNN_Building_Segmentation.jpg" style="width:75%; border:10px solid;align=center">
+
+<br>
 
 Climatic and land cover GIS datasets are valuable for predicting the burden of disease risk in areas that lack proper health surveillance. However, GIS datasets are often too coarse to allow finescale assessment of disease risk within different areas of a single village. Finescale features such as housing quality likely affect zoonotic disease transmission to humans. For example, disease-carrying rodents are better able to gain entry into a thatch hut versus a modern concrete building. 
 
