@@ -312,6 +312,14 @@ $(document).ready(function () {
 <p><br> <br> <br> <br> <br></p>
 
 </div>
+<div id="using-machine-vision-to-assess-the-risk-of-zoonotic-diseases" class="section level2">
+<h2>Using machine vision to assess the risk of zoonotic diseases</h2>
+<p><br> <br></p>
+<p><img src="images/CNN_Building_Segmentation.jpg" style="width:75%; border:10px solid; margin-right: 20px" align="top"></p>
+<p>Climatic and land cover GIS datasets are valuable for predicting the burden of disease risk in areas that lack proper health surveillance. However, GIS datasets are often too coarse to allow finescale assessment of disease risk within different areas of a single village. Finescale features such as housing quality likely affect zoonotic disease transmission to humans. For example, disease-carrying rodents are better able to gain entry into a thatch hut versus a modern concrete building.</p>
+<p>As part of ongoing work, we are designing a convolutional neural network (CNN) that will “see” local village features directly from aerial imagery. The CNN is constructed using the Keras and tensorflow libraries in python, and performs image segmentation to classify image pixels into discrete categories (i.e., building, rice cultivation, etc.). The CNN will allow local village features to be detected from aerial imagery across West Africa and summarized into statistics (housing density, land area of cultivation) that are meaningful predictors of local zoonotic disease transmission. The image above is a demonstration of our model’s ability to detect buildings in a village.</p>
+<p><br> <br></p>
+</div>
 <div id="using-machine-learning-to-predict-pathogenic-threats" class="section level2">
 <h2>Using machine learning to predict pathogenic threats</h2>
 <p>The 2020 Covid-19 pandemic is a salient reminder that approximately 40% of new human diseases stem from viruses or bacteria that circulate in wildlife populations. Covid-19 is believed to be transmitted by bats. Other examples are HIV from chimpanzees and Influenza A from birds. Many emerging human diseases originate in low and middle income regions of the world with limited health system infrastructure. Consequently, humanity is largely unaware of new emergent infectious diseases until after many humans are impacted (i.e., after a pandemic).</p>
@@ -322,6 +330,14 @@ $(document).ready(function () {
 <p>The forecasting model consists of different candidate submodels (layers) that each forecast a different aspect of the risk of Lassa Fever. The final forecasting model consists of a set of submodels that best predict the number of human Lassa cases in Nigeria. The first layer uses boosted regression trees that, when given land cover and weather attributes of known locations of Lassa occurence, predict the probability of Lassa being present at any 5 km by 5 km pixel across West Africa. Similarly, the second layer uses boosted regression trees to forecast the probability that the rodent reservoir of Lassa, the multimammate rat , occurs in a pixel. Finally, the third layer uses rodent trapping data to predict seasonal migrations of rats into and out of domestic settings. The form of the forecast is</p>
 <p><span class="math display">\[ \text{Lassa transmission risk} \sim D_L(x) D_R(x) T(t,x)\]</span>,</p>
 <p>where <span class="math inline">\(D_L(x)\)</span> is the probability of Lassa occuring at spatial position x, <span class="math inline">\(D_R(x)\)</span> gives the probability that the primary rodent reservoir occurs, and <span class="math inline">\(T(t,x)\)</span> describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate <span class="math inline">\(x\)</span> occurs through weather and land cover predictors from satellite datasets. This work is submitted to the Proceedings of the Royal Society B, and available as a <a href="https://www.biorxiv.org/content/10.1101/2020.03.05.979658v1">BioRxiv preprint</a>. Code that is discussed in the manuscript is available in <a href="https://github.com/54481andrew/pathogen-spillover-forecast">this github repository</a>.</p>
+<p><br> <br></p>
+</div>
+<div id="using-machine-vision-to-identify-trees" class="section level2">
+<h2>Using machine vision to identify trees</h2>
+<p><br> <br></p>
+<p><img src="images/water.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left"></p>
+<p>One of my favorite passtimes living in Wisconsin is plant identification – the plant diversity in Wisconsin is amazing, so you never know what you’ll find in some secluded meadow or woodland. This project is a fusion of my love of plant ID and my desire to learn more about machine vision with tensorflow. The goal was to build a convolutional neural network (CNN) that could identify a tree’s species from an image of its bark. This particular challenge was partly motivated by the oncoming fall weather – tree ID is about to get a lot more difficult as the leaves fall – and I would like to get better with winter tree ID.</p>
+<p>The project involved collecting an extensive image/species dataset of local trees (30+ hours in the woods) in some beautiful Wisconsin fall weather. The resulting <a href="https://github.com/54481andrew/tree-bark-cnn">github repository</a> provides the full dataset that I collected, as well as a complete walkthrough of building, training, and evaluating the CNN. This project demonstrates certain key issues in machine learning, including data augmentation, how to handle imbalanced datasets in classification problems, and model selection.</p>
 <p><br> <br></p>
 </div>
 <div id="when-should-you-vaccinate-a-fluctuating-population" class="section level2">
