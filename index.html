@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>index.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -317,7 +317,7 @@ $(document).ready(function () {
 <p>As part of the DARPA-funded PREEMPT (PREventing the EMergence of Pathogenic Threats) project, I work with a team of researchers at the University of Idaho to develop a machine learning pipeline that predicts the risk of pathogen transmission from a wildlife reservoir into human populations. Our group’s focus is Lassa virus, an RNA arenavirus that primarily circulates in rodent populations of West Africa and causes Lassa Fever when transmitted to humans. Symptoms of Lassa Fever vary widely, ranging from flu-like symptoms in mild cases to hearing-loss, hemorrhage, and death in severe cases. Current estimates suggest about 80% of all cases are asymptomatic and 2% of cases are fatal. Even more worrying is the potential for Lassa virus to gain mutations that boost its ability to transmit in humans or its fatality rate in humans.</p>
 <p>Because of the lack of health infrastructure in West Africa, many cases of Lassa Fever go unreported. As a result, the true spatial extent of Lassa Fever is unknown. Our machine-learning models of Lassa allow us to predict the geographical region in which rodent-to-human Lassa virus transmission occurs. The GIF below shows our model’s predictions of Lassa transmission to humans in West Africa.</p>
 <center>
-<img src="images/movie_forecast.gif" width="384" />
+<img src="images/movie_forecast.gif" style="width:4in" />
 </center>
 <p>The forecasting model consists of multiple submodels (layers) that each forecast a different aspect of the risk of Lassa Fever. The first layer uses boosted regression trees that, when given land cover and climate attributes of known locations of Lassa occurrence, predict the probability of Lassa being present in the rodent population within each 5 km by 5 km pixel across West Africa. Similarly, the second layer uses boosted regression trees to forecast the probability that the rodent reservoir of Lassa, the multimammate rat , occurs in a pixel. Finally, a third layer uses rodent trapping data to predict seasonal migrations of rats into and out of domestic settings. The form of the forecast is</p>
 <p><span class="math display">\[ \text{Lassa transmission risk} \sim D_L(x) D_R(x) T(t,x),\]</span> where <span class="math inline">\(D_L(x)\)</span> is the probability of Lassa occurring at spatial position x, <span class="math inline">\(D_R(x)\)</span> gives the probability that the primary rodent reservoir occurs, and <span class="math inline">\(T(t,x)\)</span> describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate <span class="math inline">\(x\)</span> occurs through climate and land cover predictors from satellite datasets. This work is ongoing; a version of this framework has been submitted to PLOS Computational Biology, and is available as a <a href="https://www.biorxiv.org/content/10.1101/2020.03.05.979658v1">BioRxiv preprint</a>. Code that is discussed in the manuscript is available in <a href="https://github.com/54481andrew/pathogen-spillover-forecast">this github repository</a>.</p>
