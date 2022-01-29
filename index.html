@@ -11,26 +11,40 @@
 
 
 
-<title>index.utf8</title>
+<title>index.knit</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -43,32 +57,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -79,10 +68,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -99,40 +84,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 64px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h2 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h3 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h4 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h5 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
-.section h6 {
-  padding-top: 69px;
-  margin-top: -69px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -160,7 +118,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -172,7 +130,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -183,10 +141,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -198,7 +169,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -294,7 +264,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -322,15 +292,15 @@ $(document).ready(function () {
 <p>The forecasting model consists of multiple submodels (layers) that each forecast a different aspect of the risk of Lassa Fever. The first layer uses boosted regression trees that, when given land cover and climate attributes of known locations of Lassa occurrence, predict the probability of Lassa being present in the rodent population within each 5 km by 5 km pixel across West Africa. Similarly, the second layer uses boosted regression trees to forecast the probability that the rodent reservoir of Lassa, the multimammate rat , occurs in a pixel. Finally, a third layer uses rodent trapping data to predict seasonal migrations of rats into and out of domestic settings. The form of the forecast is</p>
 <p><span class="math display">\[ \text{Lassa transmission risk} \sim D_L(x) D_R(x) T(t,x),\]</span> where <span class="math inline">\(D_L(x)\)</span> is the probability of Lassa occurring at spatial position x, <span class="math inline">\(D_R(x)\)</span> gives the probability that the primary rodent reservoir occurs, and <span class="math inline">\(T(t,x)\)</span> describes the seasonal migration of the reservoir. Here, dependence on the spatial coordinate <span class="math inline">\(x\)</span> occurs through climate and land cover predictors from satellite datasets. This work is ongoing; a version of this framework has been published in PLOS Computational Biology, and is available <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008811">here</a>. Code that is discussed in the manuscript is available in <a href="https://github.com/54481andrew/pathogen-spillover-forecast">this Github repository</a>.</p>
 <p><br> <br></p>
-
 </div>
 <div id="using-machine-vision-to-see-fine-scale-risk" class="section level2">
 <h2>Using machine vision to “see” fine-scale risk</h2>
-<p><br></p>
-<p><img src="images/CNN_Building_Segmentation.jpg" style="width:100%; border:10px solid;align=center"></p>
-<p><br></p>
 <p>Climatic and land cover GIS datasets are valuable for predicting the burden of disease risk in broad geographical areas. However, GIS datasets are often too coarse to allow fine-scale assessment of disease risk at, for example, the level of an individual village. This is unfortunate because fine-scale features such as housing style likely affect the extent to which humans interact with wildlife reservoirs like rodents –and as a consequence – the extent to which wildlife-borne diseases are transmitted to humans. For example, disease-carrying rodents are better able to gain entry into a building that is constructed with thatch and mud compared to a modern concrete building.</p>
-<p>As part of ongoing work, I am designing a convolutional neural network (CNN) that will “see” local village features directly from satellite imagery. The village features, in turn, will be used by downstream models to predict risk of rodent-to-human transmission of Lassa. The CNN that underlies this pipeline is constructed using the Keras and tensorflow libraries in python and performs image segmentation to classify image pixels into discrete categories (i.e., building, rice cultivation, etc.). The CNN will allow local village features to be detected from satellite imagery across West Africa and summarized into statistics (housing density, land area of cultivation) that are meaningful predictors of local zoonotic disease transmission. The image above is a demonstration of our model’s ability to detect different types of buildings and land features in an image. Want to know more? Check out my <a href="https://github.com/54481andrew/sky-glass">machine vision Github repository</a> that walks through the process of training a CNN to detect features in satellite imagery.</p>
+<p>As part of ongoing work, I am designing a convolutional neural network (CNN) that will “see” local village features directly from satellite imagery. The village features, in turn, will be used by downstream models to predict risk of rodent-to-human transmission of Lassa. The CNN that underlies this pipeline is constructed using the Keras and tensorflow libraries in python and performs image segmentation to classify image pixels into discrete categories (i.e., building, rice cultivation, etc.). The CNN will allow local village features to be detected from satellite imagery across West Africa and summarized into statistics (housing density, land area of cultivation) that are meaningful predictors of local zoonotic disease transmission. The image above is a demonstration of our model’s ability to detect different types of buildings and land features in an image. Want to know more? Check out my <a href="https://github.com/54481andrew/sky-glass">machine vision Github repository</a> that walks through the process of training a CNN to detect features in satellite imagery. The current status of this work is depicted below:</p>
+<br>
+<center>
+<p><img src="images/Pipeline.jpg" style="width:80%; border:0px solid;align=center;"></p>
+<p><br></p>
 <p><br> <br></p>
 </div>
 <div id="developing-mathematical-models-that-help-strategize-intervention-of-wildlife-pathogens" class="section level2">
@@ -364,7 +334,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -382,7 +352,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

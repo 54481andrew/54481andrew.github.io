@@ -38,15 +38,15 @@ where $D_L(x)$ is the probability of Lassa occurring at spatial position x, $D_R
 
 ## Using machine vision to "see" fine-scale risk
 
-<br>
-
-<img src="images/CNN_Building_Segmentation.jpg" style="width:100%; border:10px solid;align=center">
-
-<br>
-
 Climatic and land cover GIS datasets are valuable for predicting the burden of disease risk in broad geographical areas. However, GIS datasets are often too coarse to allow fine-scale assessment of disease risk at, for example, the level of an individual village. This is unfortunate because fine-scale features such as housing style likely affect the extent to which humans interact with wildlife reservoirs like rodents --and as a consequence -- the extent to which wildlife-borne diseases are transmitted to humans. For example, disease-carrying rodents are better able to gain entry into a building that is constructed with thatch and mud  compared to a modern concrete building.
 
-As part of ongoing work, I am designing a convolutional neural network (CNN) that will "see" local village features directly from satellite imagery. The village features, in turn, will be used by downstream models to predict risk of rodent-to-human transmission of Lassa. The CNN that underlies this pipeline is constructed using the Keras and tensorflow libraries in python and performs image segmentation to classify image pixels into discrete categories (i.e., building, rice cultivation, etc.). The CNN will allow local village features to be detected from satellite imagery across West Africa and summarized into statistics (housing density, land area of cultivation) that are meaningful predictors of local zoonotic disease transmission. The image above is a demonstration of our model's ability to detect different types of buildings and land features in an image.  Want to know more? Check out my [machine vision Github repository](https://github.com/54481andrew/sky-glass) that walks through the process of training a CNN to detect features in satellite imagery.  
+As part of ongoing work, I am designing a convolutional neural network (CNN) that will "see" local village features directly from satellite imagery. The village features, in turn, will be used by downstream models to predict risk of rodent-to-human transmission of Lassa. The CNN that underlies this pipeline is constructed using the Keras and tensorflow libraries in python and performs image segmentation to classify image pixels into discrete categories (i.e., building, rice cultivation, etc.). The CNN will allow local village features to be detected from satellite imagery across West Africa and summarized into statistics (housing density, land area of cultivation) that are meaningful predictors of local zoonotic disease transmission. The image above is a demonstration of our model's ability to detect different types of buildings and land features in an image.  Want to know more? Check out my [machine vision Github repository](https://github.com/54481andrew/sky-glass) that walks through the process of training a CNN to detect features in satellite imagery. The current status of this work is depicted below:
+
+<br>
+<center>
+<img src="images/Pipeline.jpg" style="width:80%; border:0px solid;align=center;">
+
+<br>
 
 
 <br> <br>
